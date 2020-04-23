@@ -53,6 +53,20 @@ body {
     left: 0;
     width: 200px;
     margin-top: 1rem;
+    z-index: 2;
+}
+
+#navbar ul li.types-list:hover ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#navbar ul li.types-list:hover ul li {
+    flex: 1 1 0px;
+    width: 98px;
 }
 
 #navbar ul li:hover ul li {
@@ -84,28 +98,51 @@ body {
 }
 
 #showcase {
+    background: rgba(246, 245, 120, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+#showcase:before {
+    content: '';
+    background: url("./img/kumpol-ng-saging.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: .4;
+
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 2rem;
-    background: var(--primary-color);
+    padding: 3.1rem 2rem 0 2rem;
+    color: #06623b;
 }
 
-#showcase h1 {
-    color: #ffffff;
+.container h1 {
     font-size: 4rem;
 }
 
-@media(max-width: 600px) {
-    #navbar ul li {
-        display: block;
-    }
+.container p {
+    font-size: 1.5rem;
+}
 
-    #navbar ul li:hover ul {
-        width: 100%;
-        position: relative;
+@media(max-width: 600px) {
+    #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
