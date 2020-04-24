@@ -1,0 +1,25 @@
+#about {
+    background: rgba(246, 245, 120, .5);
+    min-height: 91.8vh;
+}
+
+#about .about-container {
+    padding: 2rem;
+    margin: 0 auto;
+    color: var(--secondary-color);
+}
+
+#about .about-container h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#about .about-container img {
+    width: 100%;
+    border-radius: 5%;
+    padding: .5rem 0;
+}
+
+#about .about-container p {
+    font-size: 1.2rem;
+}

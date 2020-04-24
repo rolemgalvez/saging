@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 html,
@@ -18,6 +19,7 @@ body {
 #navbar {
     background-color: #06623b;
     z-index: 10;
+    padding: 0 2rem;
 }
 
 #navbar .nav-container {
@@ -134,7 +136,7 @@ body {
 
 #showcase:before {
     content: '';
-    background: url("./img/kumpol-ng-saging.jpg") no-repeat center center/cover;
+    background: url("../img/kumpol-ng-saging.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -177,11 +179,18 @@ body {
     font-size: 1.5rem;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 488px) {
+    #navbar .nav-container .logo {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
     #navbar ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
+        justify-content: flex-start;
     }
 }
