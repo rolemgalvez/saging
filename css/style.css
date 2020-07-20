@@ -179,6 +179,19 @@ body {
     font-size: 1.5rem;
 }
 
+footer {
+    padding: .8rem;
+    background: var(--primary-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    text-align: center;
+}
+
 @media(max-width: 488px) {
     #navbar .nav-container .logo {
         width: 100px;
