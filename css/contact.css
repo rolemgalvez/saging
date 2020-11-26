@@ -12,4 +12,43 @@
 
 #contact .contact-container h1 {
   font-size: 2.5rem;
+  padding: 0 0 1.2rem 0;
+}
+
+#contact .contact-container .form-group {
+  margin-bottom: 0.5rem;
+  padding: 1.2rem 0 0 0;
+}
+
+#contact .contact-container .form-group label {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+#contact .contact-container .form-group input,
+#contact .contact-container .form-group textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #cad1d7;
+}
+
+#contact .contact-container .form-group input:focus,
+#contact .contact-container .form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+#contact .contact-container button {
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+#contact .contact-container button:hover {
+  color: white;
+  background-color: #065f3a;
+  cursor: pointer;
 }

@@ -1,209 +1,210 @@
 :root {
-    --primary-color: #649d66;
-    --secondary-color: #06623b;
+  --primary-color: #649d66;
+  --secondary-color: #06623b;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 
 html,
 body {
-    background: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar {
-    background-color: #06623b;
-    z-index: 10;
-    padding: 0 2rem;
+  background-color: #06623b;
+  z-index: 10;
+  padding: 0 2rem;
 }
 
 #navbar .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 #navbar .nav-container .logo {
-    width: 60px;
-    height: 60px;
-    padding: .5rem;
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 #navbar .nav-container .logo img {
-    width: 100%;
-    border: 2px solid #F1C60B;
-    border-radius: 30%;
-    padding: .1rem .2rem .1rem .1rem;
-    transition: all .25s ease-in-out ;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 30%;
+  border-color: rgb(255, 230, 120);
+  padding: 0.1rem 0.2rem 0.1rem 0.1rem;
+  transition: all 0.25s ease-in-out;
 }
 
 #navbar .nav-container .logo:hover img {
-    border-radius: 50%;
-    border-color: rgb(255, 230, 120);
+  border-radius: 50%;
+  border-color: rgb(255, 230, 120);
 }
 
 #navbar ul {
-    list-style: none;
-    color: #ffffff;
+  list-style: none;
+  color: #ffffff;
 }
 
 #navbar ul li {
-    color: #ffffff;
-    display: inline-block;
-    padding: 1.3rem 1rem;
-    position: relative;
+  color: #ffffff;
+  display: inline-block;
+  padding: 1.3rem 1rem;
+  position: relative;
 }
 
 #navbar ul li a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* Hide nested ul by default */
 #navbar ul li ul {
-    display: none;
-    padding-top: .3rem;
+  display: none;
+  padding-top: 0.3rem;
 }
 
 #navbar ul li:hover {
-    cursor: pointer;
-    background: var(--primary-color);
-    color: #f4f4f4;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #f4f4f4;
 }
 
 #navbar ul li:hover a {
-    color: #f4f4f4;
+  color: #f4f4f4;
 }
 
 /* Nested dropdown show */
 #navbar ul li:hover ul {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 200px;
-    margin-top: 1rem;
-    z-index: 2;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+  z-index: 2;
 }
 
 #navbar ul li.types-list:hover ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
 
 #navbar ul li.types-list:hover ul li {
-    flex: 1 1 0px;
-    width: 98px;
+  flex: 1 1 0px;
+  width: 98px;
 }
 
 #navbar ul li:hover ul li {
-    display: block;
-    background: #e7e7e7;
+  display: block;
+  background: #e7e7e7;
 }
 
 #navbar ul li:hover ul li a {
-    color: #333333;
+  color: #333333;
 }
 
 #navbar ul li:hover ul li:hover {
-    background: #e0e0e0;
-    color: inherit;
+  background: #e0e0e0;
+  color: inherit;
 }
 
 #navbar ul li:hover ul li span {
-    float: right;
-    color: #ffffff;
-    background: var(--primary-color);
-    padding: 0.2rem 0.5rem;
-    text-align: center;
-    font-size: 0.8rem;
-    border-radius: 5px;
+  float: right;
+  color: #ffffff;
+  background: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
 }
 
 #navbar ul li:hover ul li:hover span {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 #showcase:before {
-    content: '';
-    background: url("../img/kumpol-ng-saging.jpg") no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .09;
-    z-index: -1;
+  content: "";
+  background: url("../img/kumpol-ng-saging.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.09;
+  z-index: -1;
 }
 
 #showcase {
-    background: rgba(246, 245, 120, .5);
-    position: relative;
-    /* left: 0;
+  background: rgba(246, 245, 120, 0.5);
+  position: relative;
+  /* left: 0;
     top: 0; */
-    z-index: 0;
-    /* height: 100vh;
+  z-index: 0;
+  /* height: 100vh;
     width: 100vw; */
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 91.8vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 2rem;
-    color: #06623b;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 91.8vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: #06623b;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .container h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .container p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 footer {
-    padding: .8rem;
-    background: var(--primary-color);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 0.8rem;
+  background: var(--primary-color);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer div {
-    text-align: center;
+  text-align: center;
 }
 
-@media(max-width: 488px) {
-    #navbar .nav-container .logo {
-        width: 100px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-    }
+@media (max-width: 488px) {
+  #navbar .nav-container .logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
 
-    #navbar ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  #navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
